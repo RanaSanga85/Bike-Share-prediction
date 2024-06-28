@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bike Share Prediction</title>
+</head>
+<body>
+    <h1>Bike Share Prediction</h1>
+    <form action="/predictdata" method="POST">
+        <label for="season">Season:</label>
+        <input type="number" id="season" name="season"><br><br>
+
+        <label for="year">Year:</label>
+        <input type="number" id="year" name="year"><br><br>
+
+        <label for="month">Month:</label>
+        <input type="number" id="month" name="month"><br><br>
+
+        <label for="hour">Hour:</label>
+        <input type="number" id="hour" name="hour"><br><br>
+
+        <label for="holiday">Holiday:</label>
+        <input type="number" id="holiday" name="holiday"><br><br>
+
+        <label for="weekday">Weekday:</label>
+        <input type="number" id="weekday" name="weekday"><br><br>
+
+        <label for="workingday">Workingday:</label>
+        <input type="number" id="workingday" name="workingday"><br><br>
+
+        <label for="weather">Weather:</label>
+        <input type="number" id="weather" name="weather"><br><br>
+
+        <label for="temp">Temperature:</label>
+        <input type="text" id="temp" name="temp"><br><br>
+
+        <label for="atemp">Feels Like Temperature:</label>
+        <input type="text" id="atemp" name="atemp"><br><br>
+
+        <label for="humidity">Humidity:</label>
+        <input type="text" id="humidity" name="humidity"><br><br>
+
+        <label for="windspeed">Windspeed:</label>
+        <input type="text" id="windspeed" name="windspeed"><br><br>
+
+
+        <input type="submit" value="Predict">
+    </form>
+
+    {% if results is not none %}
+        <h2>Prediction Result: {{ results }}</h2>
+    {% endif %}
+</body>
+</html>
