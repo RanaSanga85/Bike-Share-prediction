@@ -2,53 +2,135 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Bike Share Prediction</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike Share Prediction System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        .container h1 {
+            margin-bottom: 30px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            font-weight: bold;
+        }
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+        }
+        .form-row {
+            display: flex;
+            justify-content: space-between;
+        }
+        .form-row .form-group {
+            flex: 1;
+            margin-right: 10px;
+        }
+        .form-row .form-group:last-child {
+            margin-right: 0;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
-    <h1>Bike Share Prediction</h1>
-    <form action="/predictdata" method="POST">
-        <label for="season">Season:</label>
-        <input type="number" id="season" name="season"><br><br>
-
-        <label for="year">Year:</label>
-        <input type="number" id="year" name="year"><br><br>
-
-        <label for="month">Month:</label>
-        <input type="number" id="month" name="month"><br><br>
-
-        <label for="hour">Hour:</label>
-        <input type="number" id="hour" name="hour"><br><br>
-
-        <label for="holiday">Holiday:</label>
-        <input type="number" id="holiday" name="holiday"><br><br>
-
-        <label for="weekday">Weekday:</label>
-        <input type="number" id="weekday" name="weekday"><br><br>
-
-        <label for="workingday">Workingday:</label>
-        <input type="number" id="workingday" name="workingday"><br><br>
-
-        <label for="weather">Weather:</label>
-        <input type="number" id="weather" name="weather"><br><br>
-
-        <label for="temp">Temperature:</label>
-        <input type="text" id="temp" name="temp"><br><br>
-
-        <label for="atemp">Feels Like Temperature:</label>
-        <input type="text" id="atemp" name="atemp"><br><br>
-
-        <label for="humidity">Humidity:</label>
-        <input type="text" id="humidity" name="humidity"><br><br>
-
-        <label for="windspeed">Windspeed:</label>
-        <input type="text" id="windspeed" name="windspeed"><br><br>
-
-
-        <input type="submit" value="Predict">
-    </form>
-
-    {% if results is not none %}
-        <h2>Prediction Result: {{ results }}</h2>
-    {% endif %}
+    <div class="container">
+        <h1>Bike Share Prediction System</h1>
+        <form action="/predictdata" method="POST">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="season">Season</label>
+                    <select id="season" name="season" required>
+                        <option value="1">Winter</option>
+                        <option value="2">Spring</option>
+                        <option value="3">Summer</option>
+                        <option value="4">Fall</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="year">Year</label>
+                    <input type="number" id="year" name="year" min="2011" max="2012" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="month">Month</label>
+                    <input type="number" id="month" name="month" min="1" max="12" required>
+                </div>
+                <div class="form-group">
+                    <label for="hour">Hour</label>
+                    <input type="number" id="hour" name="hour" min="1" max="24" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="holiday">Holiday</label>
+                    <input type="number" id="holiday" name="holiday" min="0" max="1" required>
+                </div>
+                <div class="form-group">
+                    <label for="weekday">Weekday</label>
+                    <input type="number" id="weekday" name="weekday" min="1" max="6" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="workingday">Working Day</label>
+                    <input type="number" id="workingday" name="workingday" min="0" max="1" required>
+                </div>
+                <div class="form-group">
+                    <label for="weather">Weather</label>
+                    <select id="weather" name="weather" required>
+                        <option value="1">Clear</option>
+                        <option value="2">Mist</option>
+                        <option value="3">Light Snow</option>
+                        <option value="4">Heavy Rain</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="temp">Temperature</label>
+                    <input type="number" id="temp" name="temp" step="0.01" required>
+                </div>
+                <div class="form-group">
+                    <label for="atemp">Feels-like Temperature</label>
+                    <input type="number" id="atemp" name="atemp" step="0.01" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="humidity">Humidity</label>
+                    <input type="number" id="humidity" name="humidity" step="0.01" required>
+                </div>
+                <div class="form-group">
+                    <label for="windspeed">Wind Speed</label>
+                    <input type="number" id="windspeed" name="windspeed" step="0.01" required>
+                </div>
+            </div>
+            <button type="submit">Predict</button>
+        </form>
+        {% if results %}
+            <h2>Prediction Results: {{ results }}</h2>
+        {% endif %}
+    </div>
 </body>
 </html>
