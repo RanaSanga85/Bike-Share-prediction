@@ -5,45 +5,46 @@ The Bike Share Prediction System is designed to forecast the demand for bike-sha
 ## Folder structure
 ├───Data Base
 │   ├───DB_app.py
- │   ├───DB_connection.py
- │   ├───Readme.txt
- ├───artifacts
- │   ├───data.csv
- │   ├───model.pkl
- │   ├───preprocessor.pkl
- │   ├───test.csv
- │   ├───train.csv
- ├───notebook
- │   ├───data
- │   │   ├───Readme.txt
- │   │   ├───day.csv
- │   │   ├───hour.csv
- │   │   ├───hour1.csv
- │   ├───MODEL_TRAINING.ipynb
- │   ├───bike share prediction EDA.ipynb
- ├───src
- │   ├───components
- │   │   ├───__init__.py
- │   │   ├───data_ingestion.py
- │   │   ├───data_transformation.py
- │   │   ├───model_trainer.py
- │   ├───pipelines
- │   │   ├───__init__.py
- │   │   ├───prediction_pipeline.py
- │   ├───__init__.py
- │   ├───exception.py
- │   ├───logger.py
- │   ├───utils.py
- ├───templates
- │   ├───home.html
- │   ├───index.html
- ├───.gitattributes
- ├───.gitignore
- ├───README.md
- ├───flask_app.py
- ├───requirements.txt
- ├───setup.py
- ├───streamlit_app.py 
+│   ├───DB_connection.py
+│   ├───Readme.txt
+├───artifacts
+│   ├───data.csv
+│   ├───model.pkl
+│   ├───preprocessor.pkl
+│   ├───test.csv
+│   ├───train.csv
+├───notebook
+│   ├───data
+│   │   ├───Readme.txt
+│   │   ├───day.csv
+│   │   ├───hour.csv
+│   │   ├───hour1.csv
+│   ├───MODEL_TRAINING.ipynb
+│   ├───bike share prediction EDA.ipynb
+├───src
+│   ├───components
+│   │   ├───__init__.py
+│   │   ├───data_ingestion.py
+│   │   ├───data_transformation.py
+│   │   ├───model_trainer.py
+│   ├───pipelines
+│   │   ├───__init__.py
+│   │   ├───prediction_pipeline.py
+│   ├───__init__.py
+│   ├───exception.py
+│   ├───logger.py
+│   ├───utils.py
+├───templates
+│   ├───home.html
+│   ├───index.html
+├───.gitattributes
+├───.gitignore
+├───README.md
+├───flask_app.py
+├───requirements.txt
+├───setup.py
+├───streamlit_app.py
+
 
 ## Detailed Folder and File Descriptions
 Data Base/: Contains database connection and application scripts.
