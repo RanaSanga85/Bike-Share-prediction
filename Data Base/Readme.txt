@@ -4,7 +4,7 @@ a library for managing DataStax Astra databases. Here's a breakdown of how it wo
 
 ## 1.AstraDB Setup:
 The script begins by prompting the user to input the Astra DB API endpoint and application token, 
-which are essential for connecting to the AstraDB instance.
+which are essential for connecting to the AstraDB instance
 
 ## 2.Database Connection:
 Using the provided API endpoint and application token, AstraPy's DataAPIClient is initialized to establish a 
