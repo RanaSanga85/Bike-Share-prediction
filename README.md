@@ -38,9 +38,6 @@ The Bike Share Prediction System is designed to forecast the demand for bike-sha
      ├── templates/
      │   ├── home.html
      │   ├── index.html
-     ├── .gitattributes
-     ├── .gitignore
-     ├── README.md
      ├── flask_app.py
      ├── requirements.txt
      ├── setup.py
