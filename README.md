@@ -46,7 +46,17 @@ bike-sharing-prediction/
 ├── setup.py
 ├── streamlit_app.py
 
-
+├───artifacts
+├───documents
+│   └───Project Report
+├───logs
+├───notebook
+│   └───data
+├───src
+│   ├───components
+│   ├───pipeline
+├───static
+├───templates
 
 ## Detailed Folder and File Descriptions
  Data Base/: Contains database connection and application scripts.
