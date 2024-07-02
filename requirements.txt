@@ -4,5 +4,6 @@ seaborn
 matplotlib
 scikit-learn
 flask
+streamlit
 # Add other dependencies here
 -e .
