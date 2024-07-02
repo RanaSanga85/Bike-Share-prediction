@@ -4,9 +4,9 @@ The Bike Share Prediction System is designed to forecast the demand for bike-sha
 
 ## Folder structure
 ├───Data Base
-│   ├───DB_app.py
-│   ├───DB_connection.py
-│   ├───Readme.txt
+   |───DB_app.py
+   ├───DB_connection.py
+   ├───Readme.txt
 ├───artifacts
 │   ├───data.csv
 │   ├───model.pkl
