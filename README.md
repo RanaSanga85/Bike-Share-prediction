@@ -48,8 +48,8 @@ The Bike Share Prediction System is designed to forecast the demand for bike-sha
 
 
 ## Detailed Folder and File Descriptions
-    * Data Base/: Contains database connection and application scripts.
- artifacts/: Directory to store model and evaluation results and perform predictions.
+  * Data Base/:Contains database connection and application scripts.
+  * artifacts/:Directory to store model and evaluation results and perform predictions.
  notebook/: Jupyter notebooks for data exploration, preprocessing, and model development.
  src/: Source code for the project, including preprocessing functions and model training.
  src/components/: Source code for preprocessing functions and model training.
