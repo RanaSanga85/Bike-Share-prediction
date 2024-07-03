@@ -45,13 +45,13 @@ The Bike Share Prediction System is designed to forecast the demand for bike-sha
 
 
 ## Detailed Folder and File Descriptions
-* Data Base/:Contains database connection and application scripts.
-* artifacts/:Directory to store model and evaluation results and perform predictions.
-* - `notebook/`: Jupyter notebooks for data exploration, preprocessing, and model development.
-* src/pipeline/:Source code for different implemented pipelines.
-* src/: Source code for the project, including preprocessing functions and model training.
-* src/components/: Source code for preprocessing functions and model training.
-* src/pipelines/: Source code for different implemented pipelines.
-* templates/: Contains the basic frontend framework for deployment using Flask.
+* `Data Base/`:Contains database connection and application scripts.
+* `artifacts/`:Directory to store model and evaluation results and perform predictions.
+* `notebook/`: Jupyter notebooks for data exploration, preprocessing, and model development.
+*`src/pipeline/`:Source code for different implemented pipelines.
+* `src/`: Source code for the project, including preprocessing functions and model training.
+* `src/components/`: Source code for preprocessing functions and model training.
+* `src/pipelines/`: Source code for different implemented pipelines.
+* `templates/`: Contains the basic frontend framework for deployment using Flask.
 
 deploy link:https://ranasanga85-bike-share-prediction-system.streamlit.app/
