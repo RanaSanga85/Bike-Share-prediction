@@ -69,20 +69,32 @@ Once you have the dependencies, follow these steps to set up the project:
 3. **Activate the virtual environment:** `activate venv/`
 4. **Install the required packages:** `pip install -r requirements.txt`
 
-## Model Building and Selection
+   
+## :package:Model Building and Selection
 To predict the bike rental count, several machine learning models were implemented and evaluated. The following algorithms were utilized:
 
- * "Linear Regression": LinearRegression(),
- * "Lasso"
- * "Ridge"
- * "K-Neighbors Regressor"
- * "Decision Tree"
- * "Random Forest Regressor"
- * "AdaBoost Regressor"
-After training and evaluating these models, XGBoost was chosen as the final model due to its superior performance in terms of accuracy and predictive power. Model Deployment
-
-The selected XGBoost model was deployed using Streamlit, a Python library for building interactive web applications. The deployment allows users to input the relevant features such as date, weather conditions, and time, and obtain the predicted bike rental count as the output.
-  
+ * Linear Regression
+ * Lasso
+ * Ridge
+ * K-Neighbors Regressor
+ * Decision Tree
+ * Random Forest Regressor
+ * AdaBoost Regressor
+After training and evaluating these models, the Random Forest Regressor emerged as the final choice due to its superior accuracy and predictive power.
 
 
-deploy link:https://ranasanga85-bike-share-prediction-system.streamlit.app/
+## Model Deployment
+The chosen Random Forest model was deployed using Streamlit, a Python library designed for creating interactive web applications. This deployment allows users to enter relevant features such as date, weather conditions, and time to obtain the predicted bike rental count as the output.
+ deploy link:https://ranasanga85-bike-share-prediction-system.streamlit.app/
+
+##Streamlit Application
+1. Install the required dependencies:
+```pip install -r requirements.txt```
+2. Train the model:
+```python src/pipeline/training_pipeline.py```
+3. Run the Streamlit application:
+```streamlit run streamlit_app.py```
+4. Open your web browser and navigate to the provided URL to access the application.
+5. Input the relevant features such as date, weather conditions, and time.
+6. Click the "Predict" button to see the predicted bike rental count.
+Keep in mind that the accuracy of the predictions may vary depending on the input data and model performance.
