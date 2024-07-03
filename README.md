@@ -1,4 +1,4 @@
-# :bicyclist:Bike-Sharing Demand Prediction
+# <h1 align="center">:bicyclist:Bike-Sharing Demand Prediction
 ## :briefcase:Overview
 The Bike Share Prediction System is designed to forecast the demand for bike-sharing services using machine learning techniques. This system aims to provide accurate Tpredictive model to forecast bike rental counts based on various features such as date, weather conditions, and time of daypredictions on bike rentals, which can help operators optimize bike distribution, reduce maintenance costs, and enhance user experience.
 
@@ -44,7 +44,7 @@ The Bike Share Prediction System is designed to forecast the demand for bike-sha
      ├── streamlit_app.py
 
 
-## :open_book:Detailed Folder and File Descriptions
+## :open_file_folder:Detailed Folder and File Descriptions
 * `Data Base/`:Contains database connection and application scripts.
 * `artifacts/`:Directory to store model and evaluation results and perform predictions.
 * `notebook/`: Jupyter notebooks for data exploration, preprocessing, and model development.
@@ -53,5 +53,9 @@ The Bike Share Prediction System is designed to forecast the demand for bike-sha
 * `src/components/`: Source code for preprocessing functions and model training.
 * `src/pipelines/`: Source code for different implemented pipelines.
 * `templates/`: Contains the basic frontend framework for deployment using Flask.
+
+##  :open_book:Dataset
+  The data is on [UCI Repository](https://archive.ics.uci.edu/ml/datasets/Bike+Sharing+Dataset)
+
 
 deploy link:https://ranasanga85-bike-share-prediction-system.streamlit.app/
