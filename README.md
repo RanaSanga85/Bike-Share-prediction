@@ -44,7 +44,7 @@ The Bike Share Prediction System is designed to forecast the demand for bike-sha
      ├── streamlit_app.py
 
 
-## Detailed Folder and File Descriptions
+## :open_book:Detailed Folder and File Descriptions
 * `Data Base/`:Contains database connection and application scripts.
 * `artifacts/`:Directory to store model and evaluation results and perform predictions.
 * `notebook/`: Jupyter notebooks for data exploration, preprocessing, and model development.
