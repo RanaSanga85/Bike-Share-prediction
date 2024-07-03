@@ -2,7 +2,7 @@
 ## :briefcase:Overview
 The Bike Share Prediction System is designed to forecast the demand for bike-sharing services using machine learning techniques. This system aims to provide accurate Tpredictive model to forecast bike rental counts based on various features such as date, weather conditions, and time of daypredictions on bike rentals, which can help operators optimize bike distribution, reduce maintenance costs, and enhance user experience.
 
-## Folder structure
+## Repository Structure
 
      ├── Data Base/
      │   ├── DB_app.py
@@ -54,8 +54,27 @@ The Bike Share Prediction System is designed to forecast the demand for bike-sha
 * `src/pipelines/`: Source code for different implemented pipelines.
 * `templates/`: Contains the basic frontend framework for deployment using Flask.
 
-##  :open_book:Dataset
+##  :books:Dataset
   The data is on [UCI Repository](https://archive.ics.uci.edu/ml/datasets/Bike+Sharing+Dataset)
+
+## Setup and Dependencies
+To run the project locally, ensure you have the following dependencies installed:
+* Python 
+* NumPy
+* Pandas
+* Scikit-learn
+* Matplotlib
+* Flask
+* streamlit
+
+  Once you have the dependencies, follow these steps to set up the project:
+
+  * Clone the repository: git clone https://github.com/Pratik.94229/Bike-sharing-demand-prediction.git
+  * Navigate to the project directory: cd Bike-sharing-demand-prediction
+  * Create a virtual environment (optional): conda create -p venv python==3.8
+  * Activate the virtual environment (optional): activate venv/
+  * Install the required packages: pip install -r requirements.txt
+  
 
 
 deploy link:https://ranasanga85-bike-share-prediction-system.streamlit.app/
