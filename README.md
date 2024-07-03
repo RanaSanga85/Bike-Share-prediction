@@ -86,7 +86,8 @@ After training and evaluating these models, the Random Forest Regressor emerged 
 
 ## Model Deployment
 The chosen Random Forest model was deployed using Streamlit, a Python library designed for creating interactive web applications. This deployment allows users to enter relevant features such as date, weather conditions, and time to obtain the predicted bike rental count as the output.
- deploy link:https://ranasanga85-bike-share-prediction-system.streamlit.app/
+
+deploy link:https://ranasanga85-bike-share-prediction-system.streamlit.app/
 
  
 ## Streamlit Application
