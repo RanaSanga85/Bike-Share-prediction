@@ -103,9 +103,12 @@ The chosen Random Forest model was deployed using Streamlit, a Python library de
 Keep in mind that the accuracy of the predictions may vary depending on the input data and model performance.
 
 
+
 ## Conclusion
 This project demonstrates the application of machine learning models in predicting bike rental counts. By leveraging the Random Forest Regressor and utilizing various input features such as date, weather conditions, and time, the model achieves accurate predictions. These predictions enable users to make informed decisions regarding bike rental management.
 The deployment of the model using Streamlit provides a user-friendly and interactive way to access the predictions. This makes it accessible to a wide range of users, allowing for easy input of data and quick retrieval of rental count predictions.
+
+
 
 ## License
 This project is licensed under the MIT License. You are free to use, modify, and distribute this software, provided that the original copyright notice and this permission notice are included in all copies or substantial portions of the software.
