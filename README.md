@@ -35,15 +35,9 @@ The Bike Share Prediction System is designed to forecast the demand for bike-sha
      │   ├── exception.py
      │   ├── logger.py
      │   ├── utils.py
-     ├── templates/
-     │   ├── home.html
-     │   ├── index.html
-     ├── flask_app.py
-     ├── requirements.txt
-     ├── setup.py
-     ├── streamlit_app.py
+     ├── templates
 
-
+     
 ## :open_file_folder:Detailed Folder and File Descriptions
 * `Data Base/`:Contains database connection and application scripts.
 * `artifacts/`:Directory to store model and evaluation results and perform predictions.
@@ -75,7 +69,19 @@ Once you have the dependencies, follow these steps to set up the project:
 3. **Activate the virtual environment:** `activate venv/`
 4. **Install the required packages:** `pip install -r requirements.txt`
 
-## Architecture Design
+## Model Building and Selection
+To predict the bike rental count, several machine learning models were implemented and evaluated. The following algorithms were utilized:
+
+ * "Linear Regression": LinearRegression(),
+ * "Lasso"
+ * "Ridge"
+ * "K-Neighbors Regressor"
+ * "Decision Tree"
+ * "Random Forest Regressor"
+ * "AdaBoost Regressor"
+After training and evaluating these models, XGBoost was chosen as the final model due to its superior performance in terms of accuracy and predictive power. Model Deployment
+
+The selected XGBoost model was deployed using Streamlit, a Python library for building interactive web applications. The deployment allows users to input the relevant features such as date, weather conditions, and time, and obtain the predicted bike rental count as the output.
   
 
 
