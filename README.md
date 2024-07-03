@@ -59,7 +59,7 @@ The Bike Share Prediction System is designed to forecast the demand for bike-sha
   The data is on [UCI Repository](https://archive.ics.uci.edu/ml/datasets/Bike+Sharing+Dataset) 
   
 
-## Setup and Dependencies
+## :desktop_computer:Setup and Dependencies
 To run the project locally, ensure you have the following dependencies installed:
 - Python 
 - NumPy
@@ -71,10 +71,11 @@ To run the project locally, ensure you have the following dependencies installed
 
 Once you have the dependencies, follow these steps to set up the project:
 1. **Clone the repository:** `git clone https://github.com/RanaSanga85/Bike-Share-prediction.git`
-2. **Navigate to the project directory:** `cd Bike-sharing-demand-prediction`
-3. **Create a virtual environment (optional):** `conda create -p venv python=`
-4. **Activate the virtual environment (optional):** `activate venv/`
-5. **Install the required packages:** `pip install -r requirements.txt`
+2. **Create a virtual environment:** `conda create -p venv python`
+3. **Activate the virtual environment:** `activate venv/`
+4. **Install the required packages:** `pip install -r requirements.txt`
+
+## Architecture Design
   
 
 
