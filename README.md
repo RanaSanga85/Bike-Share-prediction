@@ -70,11 +70,11 @@ To run the project locally, ensure you have the following dependencies installed
 - streamlit
 
 Once you have the dependencies, follow these steps to set up the project:
-**1. Clone the repository:** ```git clone https://github.com/Pratik.94229/Bike-sharing-demand-prediction.git```
-**2. Navigate to the project directory:** ```cd Bike-sharing-demand-prediction```
-**3. Create a virtual environment (optional):** ``conda create -p venv python=``
-**4. Activate the virtual environment (optional):** ``activate venv/``
-**5. Install the required packages:** ``pip install -r requirements.txt``
+1. **Clone the repository:** `git clone https://github.com/RanaSanga85/Bike-Share-prediction.git`
+2. **Navigate to the project directory:** `cd Bike-sharing-demand-prediction`
+3. **Create a virtual environment (optional):** `conda create -p venv python=`
+4. **Activate the virtual environment (optional):** `activate venv/`
+5. **Install the required packages:** `pip install -r requirements.txt`
   
 
 
