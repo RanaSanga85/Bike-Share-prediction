@@ -59,21 +59,20 @@ The Bike Share Prediction System is designed to forecast the demand for bike-sha
 
 ## Setup and Dependencies
 To run the project locally, ensure you have the following dependencies installed:
-* Python 
-* NumPy
-* Pandas
-* Scikit-learn
-* Matplotlib
-* Flask
-* streamlit
+- Python 
+- NumPy
+- Pandas
+- Scikit-learn
+- Matplotlib
+- Flask
+- streamlit
 
-  Once you have the dependencies, follow these steps to set up the project:
-
-  * Clone the repository: git clone https://github.com/Pratik.94229/Bike-sharing-demand-prediction.git
-  * Navigate to the project directory: cd Bike-sharing-demand-prediction
-  * Create a virtual environment (optional): conda create -p venv python==3.8
-  * Activate the virtual environment (optional): activate venv/
-  * Install the required packages: pip install -r requirements.txt
+Once you have the dependencies, follow these steps to set up the project:
+1. Clone the repository:```git clone https://github.com/Pratik.94229/Bike-sharing-demand-prediction.git```
+2. Navigate to the project directory: cd Bike-sharing-demand-prediction
+3. Create a virtual environment (optional): conda create -p venv python==3.8
+4. Activate the virtual environment (optional): activate venv/
+5. Install the required packages: pip install -r requirements.txt
   
 
 
