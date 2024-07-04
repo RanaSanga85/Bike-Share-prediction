@@ -71,7 +71,6 @@ Once you have the dependencies, follow these steps to set up the project:
    
 ## <h1 align="center">:package:Model Building and Selection
 To predict the bike rental count, several machine learning models were implemented and evaluated. The following algorithms were utilized:
-
  * Linear Regression
  * Lasso
  * Ridge
